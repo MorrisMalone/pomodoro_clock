@@ -122,13 +122,4 @@ button:active {
     margin: 0 auto;
 }
 
-.session-container {
-    border-bottom: 1px solid rgb(175, 174, 174);
-    border-right: 1px solid rgb(175, 174, 174);
-}
-
-.break-container {
-    border-bottom: 1px solid rgb(175, 174, 174);
-}
-
 }
