@@ -1,0 +1,134 @@
+body {
+    font-family: 'Bitter', serif;
+    font-size: 30px;
+    margin: 0;
+    height: 100%;
+    color: rgb(70, 70, 70);
+    background-color: rgb(214, 214, 214);
+}
+
+p, h6 {
+    text-align: center;
+}
+
+button {
+    -webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.2s;
+    border: none;
+    background-color: white;
+    color: rgb(70, 70, 70);
+    background-color: transparent;
+}
+
+button:focus {outline:0;}
+
+button:hover {
+    color: grey;
+}
+
+button:active {
+    color: rgb(121, 112, 36);
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.main-container {
+    display: grid;
+    margin: 15px;
+    min-width: 300px;
+    grid-template-rows: 50% 30% 20%;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+        "timer timer"
+        "session break"
+        "player player";
+    height: 100vh;
+    min-height: 500px;
+}
+
+.session-container {
+    grid-area: session;
+    display: grid;
+    grid-template-rows: 25% 75%;
+}
+
+.break-container {
+    grid-area: break;
+    display: grid;
+    grid-template-rows: 25% 75%;
+}
+
+.player {
+    grid-area: player;
+}
+
+.timer {
+    grid-area: timer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.session-time {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#buttonStart {
+    order: 2;
+}
+
+#buttonPause {
+    order: 3;
+}
+
+#buttonStop {
+    order: 4;
+}
+
+#buttonReload {
+    order: 1;
+}
+
+#break, #session {
+    flex-basis: 40%;
+}
+
+#time {
+    font-size: 2em;
+    color: rgb(29, 29, 29);
+}
+
+.button-size {
+    font-size: 0.8em;
+}
+
+.player button {
+    font-size: 1em;
+}
+
+#state {
+    position: relative;
+    bottom: -50px;
+}
+
+@media only screen and (min-width: 900px) {
+
+.main-container {
+    max-width: 600px;
+    max-height: 600px;
+    margin: 0 auto;
+}
+
+.session-container {
+    border-bottom: 1px solid rgb(175, 174, 174);
+    border-right: 1px solid rgb(175, 174, 174);
+}
+
+.break-container {
+    border-bottom: 1px solid rgb(175, 174, 174);
+}
+
+}

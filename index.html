@@ -1,0 +1,54 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pomodoro Clock</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="script2.js" async></script>
+</head>
+
+<body>
+    <div class="main-container">
+
+        <div class="session-container">
+
+            <h6>Session</h6>
+
+            <div class="session-time">
+                <button id="sessionMinus" class="button-size"><i class="fas fa-minus"></i></button>
+                <p id="session">25</p>
+                <button id="sessionPlus" class="button-size"><i class="fas fa-plus"></i></button>
+            </div>
+        </div>
+
+        <div class="break-container">
+            <h6>Break</h6>
+
+            <div class="session-time">
+                <button id="breakMinus" class="button-size"><i class="fas fa-minus"></i></button>
+                <p id="break">5</p>
+                <button id="breakPlus" class="button-size"><i class="fas fa-plus"></i></button>
+            </div>
+        </div>
+
+        <div class="player session-time">
+            <button id="buttonStart"><i class="fas fa-play"></i></button>
+            <button id="buttonPause"><i class="fas fa-pause"></i></button>
+            <button id="buttonStop"><i class="fas fa-stop"></i></button>
+            <button id="buttonReload"><i class="fas fa-sync-alt"></i></button>
+        </div>
+
+        <div class="timer">
+            <div id="time">25:00</div>
+            <div id="state">Session</div>
+        </div>
+
+    </div>
+</body>
+
+</html>
